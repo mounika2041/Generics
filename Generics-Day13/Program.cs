@@ -36,7 +36,7 @@ namespace Generics_Day13
                 case 5:
                     int[] arr = { 10, 45, 26, 90 };
                     FindMaxUsingArraySortMethod<int> result = new FindMaxUsingArraySortMethod<int>(arr);
-                    result.MaxMethod();
+                    result.PrintMaxValue();
                     break;
                 default:
                     break;

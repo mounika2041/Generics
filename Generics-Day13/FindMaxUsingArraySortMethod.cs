@@ -28,8 +28,12 @@ namespace Generics_Day13
         public T MaxMethod()
         {
             var Max = MaxValue();
-            Console.WriteLine("MAX values is:" + Max);
             return Max;
+        }
+        public void PrintMaxValue()
+        {
+            var Max = MaxValue();
+            Console.WriteLine("max value is:" + Max);
         }
 
     }
