@@ -13,7 +13,7 @@ namespace Generics_Day13
         {
             Console.WriteLine("welcome to generics");
             Console.WriteLine("please choose program number to execute");
-            Console.WriteLine("1:find the max value of integers\n2:find the max value of floats\n3:find the max value of string\n4:Find  Max using Generic Class\n5:Find max using Array Sort");
+            Console.WriteLine("1:find the max value of integers\n2:find the max value of floats\n3:find the max value of string\n 4:find max using generics method\n5:Find  Max using Generic Class\n6:Find max using Array Sort");
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {
@@ -30,10 +30,18 @@ namespace Generics_Day13
                     Console.WriteLine("{0} is having Max value out of{1},{2},{3}", FindMaxOfString.FindMaxValue(s1, s2, s3), s1, s2, s3);
                     break;
                 case 4:
+                    int X = 120, Y = 100, Z = 80;
+                    float F1= 22.34f,F2= 45.78f,F3= 9.54f;
+                    string S1 ="abc", S2 ="abz", S3 ="zbc";
+                    FindMaxUsingGenericsMethod.printMaxValue<int>(X, Y, Z);
+                    FindMaxUsingGenericsMethod.printMaxValue<float>(F1, F2, F3);
+                    FindMaxUsingGenericsMethod.printMaxValue<string>(S1, S2, S3);
+                    break;
+                case 5:
                     int k = 15, l = 34, m = 90;
                     new GenericsFindMax<int>(k, l, m).TestMaximum();
                     break;
-                case 5:
+                case 6:
                     int[] arr = { 10, 45, 26, 90 };
                     FindMaxUsingArraySortMethod<int> result = new FindMaxUsingArraySortMethod<int>(arr);
                     result.PrintMaxValue();

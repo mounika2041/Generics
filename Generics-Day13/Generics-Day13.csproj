@@ -47,6 +47,7 @@
     <Compile Include="FindMaxOfInteger.cs" />
     <Compile Include="FindMaxOfString.cs" />
     <Compile Include="FindMaxUsingArraySortMethod.cs" />
+    <Compile Include="FindMaxUsingGenericsMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GenericsFindMax.cs" />
